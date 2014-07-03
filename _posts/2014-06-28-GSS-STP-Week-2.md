@@ -19,6 +19,8 @@ Schedule
 - Thursday: Stayed home from work to rest, watched USA vs Germany. Bible Study with the team 9pm-11pm accompanied by Rich.
 - Friday: 10:30am-12:30pm Team Evanglism @ CSUF, One-on-one with Dean accompanied by Rich 1:30-3:00pm. One-on-one with Rich 3:00-5:30pm. Team date night with Rachel's team 7pm-10:30pm. 
 - Saturday: Rest day, some friends from UCI came down and visited.
+
+<div style="text-align:center"><img src="https://farm4.staticflickr.com/3885/14562116835_3f4bf3eb4f.jpg" width="500" height="333" align="center"><p>Nav Night Monday Night: We had a talk on Matt 13:44</p></div>
 	
 My thoughts
 -------------
@@ -39,12 +41,13 @@ Here is what our evangelism looks like:
 		3. Jesus paid our debt(wages) by humiliating himself and dying on the cross for our sins
 > "For the wages of sin is death but the free gift of God is eternal life in Christ Jesus our Lord." - Romans 6:23		
 
-<div style="text-align:center"><img src="https://farm6.staticflickr.com/5508/14375625257_f00c837375.jpg" width="500" height="333" align="center"></div>
+<div style="text-align:center"><img src="https://farm6.staticflickr.com/5508/14375625257_f00c837375.jpg" width="500" height="333" align="center"><p>This is the One-Verse(Romans 6:23) Bridge</p></div>
 
 Last Words
 -------------
 Each guy team this week took out a girls team on a fun date. The heart behind it was to honor these women and be a blessing to them. We had Rachel's team (Tiffany, Jordan, and Hannah). We took them to Huntington Beach and took them to Ruby's on the pier. These girls ended up really encouraging us. Firing question after question, and being interested in who we were. It ended up being a great time and all the guys were stoked. I struggle with feeling like I can be a blessing to girls. I feel inadequate; but I'm so thankful we were able to be uncomfortable and this with them!
 
+<div style="text-align:center"><img src="https://farm4.staticflickr.com/3862/14375434970_132ef4c33d.jpg" width="500" height="333" align="center"><p>Girls from the the date night from left to right: Tiffany, Jordan, Hannah, and Rachel</p></div>
 
 I'm feeling a lot better now. Thank you all for your prayers. I have so much more energy and I'm stoked on that! We had **parents weekend** this weekend, so I got to spend time with my Aunt and cousin from Alabama, along with my parents =]. I got to take a few people from STP to my church Sunday =]. It was great having them meet some of the people who have played a huge role in my life.
 
