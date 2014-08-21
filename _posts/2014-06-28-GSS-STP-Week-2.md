@@ -1,6 +1,5 @@
 ---
 title: "Week 2 GSS STP Update"
-description: ""
 layout: post
 tags: Navigators, GSS
 category: faith

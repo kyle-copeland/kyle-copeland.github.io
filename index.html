@@ -6,15 +6,68 @@ layout: default
 
   <h1>Posts</h1>
 
-  <ul class="posts">
+	<div id="recent-posts" class="container-fluid">
+	<div class="row">
+	<div class="col-xs-12 col-sm-6">
     {% for post in site.posts %}
-      <li>
-        <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
-        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-      </li>
+		{% capture modulo %}{{ forloop.index0 | mod:2 }}{% endcapture %}
+		{% if modulo == '0' %}
+			<a href="{{post.url}}" class="post">
+				<h1>{{post.title}}</h1>
+				{% if post.photo_url %}
+				<img src= '{{post.photo_url}}' style="width:100%">
+				{% else %}
+					{% if post.description %}
+					<span>{{ post.description | strip_html }}</span>
+					{% else %}
+					<span>{{ post.excerpt | strip_html }}</span>
+					{% endif %}
+				{% endif %}
+			</a>
+		{% endif %}
     {% endfor %}
-  </ul>
-
+	</div>
+	<div class="col-xs-12 col-sm-6">
+	  {% for post in site.posts %}
+		{% capture modulo %}{{ forloop.index0 | mod:2 }}{% endcapture %}
+		{% if modulo == '1' %}
+			<a href="{{post.url}}" class="post">
+				<h1>{{post.title}}</h1>
+				{% if post.photo_url %}
+				<img src= '{{post.photo_url}}' style="width:100%">
+				{% else %}
+					{% if post.description %}
+					<span>{{ post.description | strip_html }}</span>
+					{% else %}
+					<span>{{ post.excerpt | strip_html }}</span>
+					{% endif %}
+				{% endif %}
+			</a>
+		{% endif %}
+    {% endfor %}
+	</div>
+	</div>
   <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 
 </div>
+<script type="text/javascript">
+(function() {
+	var posts = document.getElementById('recent-posts');
+	var child_nodes = posts.childNodes;
+	for(var k = 0; k < child_nodes.length; k++)
+	{
+		if(child_nodes[k].nodeType === Node.ELEMENT_NODE)
+		{
+			console.log(k,k%2);
+			if((k % 2) === 0)
+			{
+				console.log("even");
+			}
+			else
+			{
+				console.log("odd");
+			}
+		}
+	}
+})()
+</script>
