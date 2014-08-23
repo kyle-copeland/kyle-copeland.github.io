@@ -33,12 +33,15 @@ layout: default
 	  {% for post in site.posts limit:26 %}
 		{% capture modulo %}{{ forloop.index0 | mod:2 }}{% endcapture %}
 		{% if modulo == '1' %}
-			<a href="{{post.url}}" class="post-excerpt {% if post.photo_url %} photo {% endif %}">
+		<a href="{{post.url}}" class="post-excerpt {% if post.photo_url %}photo{% endif %}">
 				<div class="post-container">
 				<h1 class="title">{{post.title}}</h1>
 				{% if post.photo_url %}
 					<div style="background-image:url('{{post.photo_url}}')" class="image"></div>
 				{% else %}
+					 <info datetime="{{ page.date | date: "%Y-%m-%d" }}">
+					  {{ post.date | date: "%b %Y" }}
+					</info>
 					{% if post.description %}
 					<span>{{ post.description | strip_html }}</span>
 					{% else %}
