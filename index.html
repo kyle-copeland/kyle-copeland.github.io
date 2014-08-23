@@ -7,6 +7,7 @@ layout: default
 	<div class="row">
 	<div class="col-xs-12 col-sm-6">
     {% for post in site.posts limit:26 %}
+		{{forloop.index0}}
 		{% capture modulo %}{{ forloop.index0 | mod:2 }}{% endcapture %}
 		{% if modulo == '0' %}
 			<a href="{{post.url}}" class="post-excerpt {% if post.photo_url %}photo{% endif %}">
@@ -31,6 +32,7 @@ layout: default
 	</div>
 	<div class="col-xs-12 col-sm-6">
 	  {% for post in site.posts limit:26 %}
+		{{forloop.index0}}
 		{% capture modulo %}{{ forloop.index0 | mod:2 }}{% endcapture %}
 		{% if modulo == '1' %}
 		<a href="{{post.url}}" class="post-excerpt {% if post.photo_url %}photo{% endif %}">
