@@ -21,7 +21,7 @@ layout: default
 					{% if post.description %}
 					<span>{{ post.description | strip_html }}</span>
 					{% else %}
-					<span>{{ post.excerpt | strip_html }}</span>
+					<span>{{post.content | strip_html | truncatewords: 50}}</span>
 					{% endif %}
 				{% endif %}
 				</div>
@@ -42,7 +42,7 @@ layout: default
 					{% if post.description %}
 					<span>{{ post.description | strip_html }}</span>
 					{% else %}
-					<span>{{ post.excerpt | strip_html }}</span>
+					<span>{{post.content | strip_html | truncatewords: 50}}</span>
 					{% endif %}
 				{% endif %}
 				</div>
