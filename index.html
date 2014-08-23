@@ -3,26 +3,28 @@ layout: default
 ---
 
 <div class="home">
-
-  <h1>Posts</h1>
-
 	<div id="recent-posts" class="container-fluid">
 	<div class="row">
 	<div class="col-xs-12 col-sm-6">
     {% for post in site.posts %}
 		{% capture modulo %}{{ forloop.index0 | mod:2 }}{% endcapture %}
 		{% if modulo == '0' %}
-			<a href="{{post.url}}" class="post">
-				<h1>{{post.title}}</h1>
+			<a href="{{post.url}}" class="post-excerpt {% if post.photo_url %}photo{% endif %}">
+				<div class="post-container">
+				<h1 class="title">{{post.title}}</h1>
 				{% if post.photo_url %}
-				<img src= '{{post.photo_url}}' style="width:100%">
+					<div style="background-image:url('{{post.photo_url}}')" class="image"></div>
 				{% else %}
+					 <info datetime="{{ page.date | date: "%Y-%m-%d" }}">
+					  {{ post.date | date: "%b %Y" }}
+					</info>
 					{% if post.description %}
 					<span>{{ post.description | strip_html }}</span>
 					{% else %}
 					<span>{{ post.excerpt | strip_html }}</span>
 					{% endif %}
 				{% endif %}
+				</div>
 			</a>
 		{% endif %}
     {% endfor %}
@@ -31,10 +33,11 @@ layout: default
 	  {% for post in site.posts %}
 		{% capture modulo %}{{ forloop.index0 | mod:2 }}{% endcapture %}
 		{% if modulo == '1' %}
-			<a href="{{post.url}}" class="post">
-				<h1>{{post.title}}</h1>
+			<a href="{{post.url}}" class="post-excerpt {% if post.photo_url %} photo {% endif %}">
+				<div class="post-container">
+				<h1 class="title">{{post.title}}</h1>
 				{% if post.photo_url %}
-				<img src= '{{post.photo_url}}' style="width:100%">
+					<div style="background-image:url('{{post.photo_url}}')" class="image"></div>
 				{% else %}
 					{% if post.description %}
 					<span>{{ post.description | strip_html }}</span>
@@ -42,6 +45,7 @@ layout: default
 					<span>{{ post.excerpt | strip_html }}</span>
 					{% endif %}
 				{% endif %}
+				</div>
 			</a>
 		{% endif %}
     {% endfor %}
@@ -50,24 +54,3 @@ layout: default
   <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 
 </div>
-<script type="text/javascript">
-(function() {
-	var posts = document.getElementById('recent-posts');
-	var child_nodes = posts.childNodes;
-	for(var k = 0; k < child_nodes.length; k++)
-	{
-		if(child_nodes[k].nodeType === Node.ELEMENT_NODE)
-		{
-			console.log(k,k%2);
-			if((k % 2) === 0)
-			{
-				console.log("even");
-			}
-			else
-			{
-				console.log("odd");
-			}
-		}
-	}
-})()
-</script>
