@@ -9,3 +9,4 @@ username: "kyle-copeland"
 # Build settings
 markdown: kramdown
 permalink: pretty
+exclude: [history]
